@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Thomas Garry - Software Engineer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Thomas Garry's Resume Website">
+    <meta name="author" content="Thomas Garry">
+    <!-- <meta http-equiv="Content-Security-Policy" content="script-src 'none'"> -->
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <header>
+        <input class="side-menu" type="checkbox" id="side-menu" />
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+        <nav class="nav">
+            <a href="#Home">Home</a>
+            <ul class="menu">
+                <li><a href="#About">About</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li><a href="/assets/thomasGarryResume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+                <li><input type="image" id="darkToggle" alt="toggle dark mode" src="/assets/images/weather-night-dark.png"></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="Home">
+        <section id="Main">
+            <div id="main-cat-container">
+                <h1 class="emph-underline">Hello ! <br> I'm Thomas Garry</h1>
+                <div id="smirk-cat-container">
+                    <img id="smirk-cat" src="assets/images/cat.svg" alt="cat" width="400" height="400">
+                    <div id="arrow-down">
+                        <!-- <a href="#About"><img src="assets/images/down-arrow.svg" alt="go to about section" width="20" height="20"></a> -->
+                        <a href="#About" aria-label="Go to About Page">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 330 330" style="enable-background:new 0 0 330 330;" xml:space="preserve">
+                                <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393
+                                c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393
+                                s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <picture id="my-pic-container">
+                <source srcset="/assets/images/thomas-g2.webp" type="image/webp" media="(min-width: 768px)">
+                <source srcset="/assets/images/thomas-g2-small.webp" height="150">
+                <img id="my-pic" src="/assets/images/thomas-g2.jpg" alt="Thomas Garry" height="250" width="257">
+            </picture>
+        </section>
+        <div id="about-bg">
+            <section id="About">
+                <h2 class="emph-underline">About me</h2>
+                <div id="about-experience-container">
+                    <div id="about-me">
+                        <h3>Me</h3>
+                        <p>I am a friendly Computer Science student at UC San Diego who loves programming and learning, graduating Dec 2022.</p>
+                        <hr>
+                        <p> I have been fortunate to work with amazing students at UC San Diego in clubs doing work that will benefit others as well as work with an industry team at Teradata! I strive to join meaningful teams that will have a positive impact.
+                        </p>
+                        <p> On top of being a CS tutor and in CS organizations I like to play guitar, have fun with friends, walk/hike, and I <i>love</i> cats!
+                        </p>
+                    </div>
+                    <div id="about-experience">
+                        <h3>Experience</h3>
+                        <ul class="modals-list">
+                            <li class="experience">
+                                <button type="button" name="confirmation" class="confirmation-btn">Capital One Intern
+                                    Summer 2022 (incoming)</button>
+                                <dialog class="info-modal">
+                                    <form method="dialog">
+                                        <div>
+                                            <h3 class="info-modal-title">Capital One Intern Summer 2022 (incoming)</h3>
+                                            <button class="confirm-btn" value="default">ok!</button>
+                                        </div>
+                                        <p>
+                                            I am excited to learn from Capital One!
+                                        </p>
+                                    </form>
+                                </dialog>
+                            </li>
+                            <li class="experience">
+                                <button type="button" name="confirmation" class="confirmation-btn">Tutor: Mar 2021 - Mar
+                                    2022</button>
+                                <dialog class="info-modal">
+                                    <form method="dialog">
+                                        <div>
+                                            <h3 class="info-modal-title">Tutor: Mar 2021 - Mar 2022</h3>
+                                            <button class="confirm-btn" value="default">ok!</button>
+                                        </div>
+                                        <p>
+                                            I was a tutor for CSE 12 (introductory data structures) for two quarters and now I am a CSE 100 tutor (advanced data structures)! <br /> <br /> Working as a tutor is impactful for me emotionally as well as for
+                                            my learning. My responsibilities as a tutor are to grade homework, tests, and projects as well as hold tutor and lab hours. I tutor for two courses taught at the same time focused on data structures, object-oriented
+                                            design, and software tools. <br /> <br /> Our assignments are challenging for many students and helping them learn the best ways for them to solve issues has helped me to be a better problem solver. Helping
+                                            students learn has been very rewarding and I enjoy being able to see my impact on other students and their growth.
+                                        </p>
+                                    </form>
+                                </dialog>
+                            </li>
+                            <li class="experience">
+                                <button type="button" name="confirmation" class="confirmation-btn">Teradata: Jun 2021 -
+                                    Sep 2021</button>
+                                <dialog class="info-modal">
+                                    <form method="dialog">
+                                        <div>
+                                            <h3 class="info-modal-title">Teradata: Jun 2021 - Sep 2021</h3>
+                                            <button class="confirm-btn" value="default">ok!</button>
+                                        </div>
+                                        <p>
+                                            At Teradata I was a web intern on the Teradata Cloud UI team. I worked primarily in Angular using the Teradata Covalent UI platform to provide data visualizations and learned about web services for communication to complex systems. I also automated testing
+                                            of the UI with Cypress by mocking end-to-end user interaction and stubbing network calls to test within the project pipeline. I enjoyed web development in general as well as working with my team. <br
+                                            /> <br /> By helping on this team I positively impacted many people while also learning a significant amount about web development.
+                                        </p>
+                                    </form>
+                                </dialog>
+                            </li>
+                            <li class="experience">
+                                <button type="button" name="confirmation" class="confirmation-btn">SPIS mentor: Aug 2020
+                                    - Sep 2020</button>
+                                <dialog class="info-modal">
+                                    <form method="dialog">
+                                        <div>
+                                            <h3 class="info-modal-title">SPIS mentor: Aug 2020 - Sep 2020</h3>
+                                            <button class="confirm-btn" value="default">ok!</button>
+                                        </div>
+                                        <p>
+                                            As a SPIS mentor, I worked with four incoming freshmen at my college doing Python programming projects and assignments. I advised their adjustment to college life by engaging in conversations about scheduling, dorm life, club activities, etc. I held office
+                                            hours online where students joined or submitted questions and had one-on-one guidance with me. As a mentor, I worked with an ECE professor to prepare labs, facilitate lectures, and grade homework assignments
+                                            and projects. <br /> <br /> Our labs and lectures were designed to teach python fundamentals as well as applications of Python, such as pygame. Each week I provided
+                                            feedback on labs and data structures homework assignments for each mentee. As I mentored I saw the mentees grow in their confidence and knowledge and it was fulfilling to see what they do by themselves and what
+                                            they ask me when it was beyond the predetermined labs.
+                                        </p>
+                                    </form>
+                                </dialog>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <h3>Activities</h3>
+                <div id="about-activities">
+                    <ul class="modals-list">
+                        <li class="activities-li">
+                            <button type="button" name="confirmation" class="confirmation-btn">Autograder/Queues: Nov
+                                2021 - Present</button>
+                            <dialog class="info-modal">
+                                <form method="dialog">
+                                    <div>
+                                        <h3 class="info-modal-title">Autograder/Queues: Nov 2021 - Present</h3>
+                                        <button class="confirm-btn" value="default">ok!</button>
+                                    </div>
+                                    <p>
+                                        The queues team at UC San Diego is working on a project that is used by computer science class tutors to schedule their sessions with students. This project is a transition of a previous project written in
+                                        <b>React</b>, <b>Flask</b>, <b>MySQL</b>, and <b>SQLAlchemy</b>.
+                                    </p>
+                                </form>
+                            </dialog>
+                        </li>
+                        <li class="activities-li">
+                            <button type="button" name="confirmation" class="confirmation-btn">TSE: Nov 2020 - Nov
+                                2021</button>
+                            <dialog class="info-modal">
+                                <form method="dialog">
+                                    <div>
+                                        <h3 class="info-modal-title">TSE: Nov 2020 - Nov 2021</h3>
+                                        <button class="confirm-btn" value="default">ok!</button>
+                                    </div>
+                                    <p>
+                                        Triton Software Engineering (TSE) is a student organization on campus that provides pro-bono work for nonprofits within the San Diego community. In this organization, I have worked on the backend for an online cuisine ordering tool for the United Women
+                                        of East Africa Support Team. This tool allows for San Diegans to enjoy East African cuisine while supporting a good cause! For this project specifically, I worked on implementing the backend by creating routes in
+                                        Express to interact with Mongo databases so that UWEAST may have a menu with items, orders, and admin users. <br /> <br /> My second project with TSE is for Sakyadhita a San
+                                        Diegan Buddhist organization, and my team has been able to start this project from scratch. To implement the backend for this project I learned Sequelize and MySQL. <br /> <br /> Overall, I have learned a significant
+                                        amount from TSE and I am extremely happy with how our team has built our community and projects. <br /> <br />
+                                    </p>
+                                </form>
+                            </dialog>
+                        </li>
+                        <li class="activities-li">
+                            <button type="button" name="confirmation" class="confirmation-btn">ACM: Aug 2019 - May
+                                2021</button>
+                            <dialog class="info-modal">
+                                <form method="dialog">
+                                    <div>
+                                        <h3 class="info-modal-title">ACM: Aug 2019 - May 2021</h3>
+                                        <button class="confirm-btn" value="default">ok!</button>
+                                    </div>
+                                    <p>
+                                        When I joined the Association for Computing Machinery (ACM) I was not expecting very much as it was the first year the organization was at our school. However, it turned out to be an amazing community in which I wanted to be involved. So I joined the
+                                        staff committee in the Fall which volunteers to help at events and workshops as well as promote the organization itself. <br /> <br /> Eventually I also was able to join and
+                                        become a founding board member of the new sub-organization ACM Hack school. This committee hosts workshops in web development and I am working on creating some of those workshops. This community of students interested
+                                        in technology has helped me grow my programming skills and has also turned out to be an amazing social experience. <br /> <br /> The ACM prides itself on its community and I appreciate that I can give back to the
+                                        community of students through it.
+                                    </p>
+                                </form>
+                            </dialog>
+                        </li>
+                    </ul>
+                </div>
+                <picture id="my-guitar-container">
+                    <source srcset="/assets/images/guitar.png" type="image/png" height="800" width="800" media="(min-width: 1024px)">
+                    <source srcset="/assets/images/guitar.png" type="image/png" height="200" width="200" media="(max-width: 480px)">
+                    <img id="guitar" src="/assets/images/guitar.png" height="400" width="400" alt="guitar" loading="lazy">
+                </picture>
+            </section>
+        </div>
+        <section id="Projects">
+            <div>
+                <h2 class="emph-underline">Projects!</h2>
+                <p id="Projects-description">These are some of my favorite projects I've worked on</p>
+            </div>
+            <div id="projects">
+                <button type="button" name="confirmation" class="confirmation-projects-btn">Queues: Nov 2021 -
+                    Present</button>
+                <dialog class="info-modal">
+                    <form method="dialog">
+                        <div>
+                            <h3 class="info-modal-title">Queues: Nov 2021 - Present</h3>
+                            <button class="confirm-btn" value="default">ok!</button>
+                        </div>
+                        <p>
+                            Autograder! Autograder! Autograder! Autograder! Autograder! Autograder!
+                        </p>
+                    </form>
+                </dialog>
+                <button type="button" name="confirmation" class="confirmation-projects-btn">Sakyadhita: March 2021 - Oct
+                    2021</button>
+                <dialog class="info-modal">
+                    <form method="dialog">
+                        <div>
+                            <h3 class="info-modal-title">Sakyadhita: March 2021 - Oct 2021</h3>
+                            <button class="confirm-btn" value="default">ok!</button>
+                        </div>
+                        <p>
+                            Sakyadhita Sakyadhita Sakyadhita Sakyadhita Sakyadhita Sakyadhita Sakyadhita Sakyadhita
+                            <a href="https://github.com/TritonSE/SI-Website-Revamp" target="_blank" rel="noopener noreferrer">
+                                <img src="/assets/images/GitHub-Mark-32px.png" class="invert-with-toggle" height="32" width="32" alt="Github for Sakyadhita Project">
+                            </a>
+                        </p>
+                    </form>
+                </dialog>
+                <button type="button" name="confirmation" class="confirmation-projects-btn">UWEAST: Dec 2020 - March
+                    2021</button>
+                <dialog class="info-modal">
+                    <form method="dialog">
+                        <div>
+                            <h3 class="info-modal-title">UWEAST: Dec 2020 - March 2021</h3>
+                            <button class="confirm-btn" value="default">ok!</button>
+                        </div>
+                        <p>
+                            UWEAST UWEAST UWEAST UWEAST UWEAST UWEAST UWEAST UWEAST UWEAST UWEAST UWEASTs
+                            <a href="https://github.com/TritonSE/UWEAST-Community-Kitchen" target="_blank" rel="noopener noreferrer">
+                                <img src="/assets/images/GitHub-Mark-32px.png" class="invert-with-toggle" height="32" width="32" alt="Github for UWEAST Project">
+                            </a>
+                        </p>
+                    </form>
+                </dialog>
+                <button type="button" name="confirmation" class="confirmation-projects-btn">ACM Quiztime: Jul 2020 - Oct
+                    2020</button>
+                <dialog class="info-modal">
+                    <form method="dialog">
+                        <div>
+                            <h3 class="info-modal-title">ACM Quiztime: Jul 2020 - Oct 2020</h3>
+                            <button class="confirm-btn" value="default">ok!</button>
+                        </div>
+                        <p>
+                            My team of four developed a quiz webapp similar to Kahoot for the ACM at UCSD to use. I developed a MongoDB framework to hold quiz questions using references to reduce repetition and save space. I am collaborating with a second back-end developer to use
+                            Socket.IO to create game play. From this project I have learned more about API routes and solidified my knowledge in Express and MongoDB.
+                        </p>
+                    </form>
+                </dialog>
+                <button type="button" name="confirmation" class="confirmation-projects-btn">Mission Vista High School
+                    Virtual Tour: Mar 2019 - Mar 2020</button>
+                <dialog class="info-modal">
+                    <form method="dialog">
+                        <div>
+                            <h3 class="info-modal-title">Mission Vista High School Virtual Tour: Mar 2019 - Mar 2020
+                            </h3>
+                            <button class="confirm-btn" value="default">ok!</button>
+                        </div>
+                        <p>
+                            Starting in my senior year of high school I helped to create a virtual web tour of the MVHS. Users can click on doors to view pictures and videos uploaded by teachers who have an account related to their door. The project utilizes NodeJs, JQuery, HTML,
+                            CSS, MongoDB while also combining the Unity Game Engine Build for WebGl. My team's computer science teacher deployed the project to his server to show students during the quarantine and we are most likely giving the whole project
+                            to our teacher so that he may influence the next generation of computer science students at MVHS to build onto it.
+                        </p>
+                    </form>
+                </dialog>
+            </div>
+        </section>
+        <section id="Contact">
+            <h2 id="contact-title" class="emph-underline">I'd love to talk!</h2>
+            <form method="post" action="https://docs.google.com/forms/d/1Olb9H11YCRV-DLzt-Qm0VLwGJlD3wk-SikGClme1y9U/formResponse?" autocomplete="on">
+                <fieldset>
+                    <legend>Contact</legend>
+                    <label class="visually-hidden" for="form-name">Name:</label>
+                    <input name="entry.992876143" id="form-name" placeholder="Name">
+                    <br />
+                    <label class="visually-hidden" for="form-email">Email:</label>
+                    <input name="entry.212888984" id="form-email" type="email" placeholder="Email">
+                    <br />
+                    <label class="visually-hidden" for="form-message">Message:</label>
+                    <textarea name="entry.1909180366" id="form-message" placeholder="Message"></textarea>
+                    <br />
+                    <button type="submit">Submit Message</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <a href="mailto:thomas.r.garry@gmail.com"><img src="/assets/images/email.png" class="invert-with-toggle" height="32" width="32" alt="Email Me"></a>
+        <a href="https://www.linkedin.com/in/thomas-garry-55c/" target="_blank" rel="noopener noreferrer"><img src="/assets/images/LI-In-Bug.png" height="32" width="38" alt="My Linkedin"></a>
+        <a href="https://github.com/thomas-gg" target="_blank" rel="noopener noreferrer"><img src="/assets/images/GitHub-Mark-32px.png" class="invert-with-toggle" height="32" width="32" alt="My Github"></a>
+    </footer>
+</body>
+
+</html>
