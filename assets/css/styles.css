@@ -307,7 +307,7 @@ footer {
     flex: 50%;
 }
 
-#about-experience ul {
+#about-experience>ul {
     list-style-type: none;
     /* padding: 10px; */
     margin: 0px;
@@ -317,7 +317,7 @@ footer {
     /* pointer-events: none; */
 }
 
-#about-activities ul {
+#about-activities>ul {
     list-style-type: none;
     /* padding: 10px; */
     margin: 0rem;
@@ -402,97 +402,6 @@ footer {
 #about-me {
     flex: 50%;
     margin-right: 20px;
-}
-
-.details-modal {
-    background-color: var(--bg-color);
-    border-radius: 0.5em;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    left: 50%;
-    max-width: 90%;
-    pointer-events: none;
-    position: fixed;
-    /* Stay in place */
-    top: 50%;
-    transform: translate(-50%, -50%);
-    min-width: 30em;
-    text-align: left;
-    max-height: 80%;
-    overflow: auto;
-    display: flex;
-    flex-direction: column;
-    z-index: 2;
-}
-
-.details-modal .details-modal-close {
-    align-items: center;
-    display: flex;
-    height: 4.5em;
-    justify-content: center;
-    pointer-events: none;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 4.5em;
-}
-
-.details-modal-close {
-    margin: 0;
-}
-
-.details-modal .details-modal-close svg {
-    display: inline-block;
-}
-
-.details-modal .details-modal-title {
-    padding: 0px 0px 0px 2rem;
-    pointer-events: all;
-    position: relative;
-    width: calc(100% - 4.5em);
-}
-
-.details-modal .details-modal-title h1 {
-    font-size: 1.25rem;
-    font-weight: 600;
-    line-height: normal;
-}
-
-.details-modal .details-modal-content {
-    border-top: 1px solid #e0e0e0;
-    padding: 1rem 2rem 1rem 2rem;
-    pointer-events: all;
-    overflow: auto;
-    margin-top: 0;
-    /* overflow: auto; */
-}
-
-.details-modal-overlay {
-    transition: opacity 0.2s ease-out;
-    pointer-events: none;
-    background: rgba(15, 23, 42, 0.8);
-    position: fixed;
-    opacity: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    top: 0;
-}
-
-details[open] .details-modal-overlay {
-    pointer-events: all;
-    opacity: 0.5;
-}
-
-details summary {
-    list-style: none;
-}
-
-details summary:focus {
-    outline: none;
-}
-
-details summary::-webkit-details-marker {
-    display: none;
 }
 
 nav a:hover {
