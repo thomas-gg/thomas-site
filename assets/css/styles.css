@@ -378,7 +378,7 @@ footer {
 .confirmation-projects-btn {
     padding: 2rem;
     width: 300px;
-    height: 200px;
+    height: 250px;
     margin: 0rem 5rem 5rem 5rem;
     cursor: pointer;
     box-shadow: 0 4px 8px 0 var(--box-shadow);
@@ -516,6 +516,10 @@ fieldset button:focus {
     position: absolute !important;
     white-space: nowrap !important;
     width: 1px !important;
+}
+
+.title-project {
+    font-size: 1.5rem;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
