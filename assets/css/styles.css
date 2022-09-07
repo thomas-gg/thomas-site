@@ -60,6 +60,10 @@ body {
     color: var(--font-color);
 }
 
+p {
+    line-height: 125%;
+}
+
 dialog {
     border: none;
     background-color: var(--bg-color);
